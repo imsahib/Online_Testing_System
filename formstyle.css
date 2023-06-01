@@ -1,0 +1,45 @@
+form{
+    box-sizing:border-box;
+    padding:20px;
+    border-radius:10px;
+    background-color:#F64C72;
+    display:table;
+    width:100%;
+}
+input{
+    display:block;
+    width:100%;
+    margin-bottom:20px;
+    height:30px;
+    font-size:22px;
+}
+.questions{
+    color:blue;
+    font-size:22px;
+    margin-bottom:20px;
+}
+.options{
+    font-size:22px;
+}
+.options input{
+    display:inline;
+    width:fit-content;
+    height:10px;
+}
+.form-unit{
+    color:blue;
+}
+
+.submit{
+    width:100px;
+    
+}
+#error{
+    color:red;
+}
+#i1{
+    color:blue;
+}
+#i1 a{
+    color:#F64C72;
+}

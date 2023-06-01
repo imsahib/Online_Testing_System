@@ -1,0 +1,21 @@
+{% extends 'main.html' %}
+{% block title %} OTS-Candidate Home Page {% endblock title %}
+{% block top %}
+<a   href="{% url 'OTS:home' %}"> Home</a>
+<a   href="{%url 'OTS:logout' %}">Logout</a>
+{% endblock %}
+{% block content %}
+<h1 id="welcome">Welcome <span class="special"> {{request.session.name}} </span>,to your home page!</h1>
+<div class="button-link">
+    <a href="{% url 'OTS:testPaper' %}?n=1">Test of 1 question</a>
+</div>
+<div class="button-link">
+    <a href="{% url 'OTS:testPaper' %}?n=3">Test of 3 question</a>
+</div>
+<div class="button-link">
+    <a href="{% url 'OTS:testPaper' %}?n=5">Test of 5 question</a>
+</div>
+<div class="button-link">
+   <h3><a href="{% url 'OTS:testHistory' %}?n=1">Test History</a></h3>
+</div>
+{% endblock %}

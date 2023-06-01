@@ -1,0 +1,15 @@
+{% extends 'main.html' %}
+{% block title %} Welcome to Online Testing System {% endblock title %}
+{% block top %}
+<a  href="{% url 'OTS:registrationForm' %}"> Signup</a>
+<a  href="{%url 'OTS:login' %}">Login</a>
+{% endblock %}
+
+{% block content %}
+<p id="intro">Welcome to our Online Testing Platform! </p>
+<p id="content"><br>Get ready to take your tests in the comfort of your own home or office.<br>
+   <br>With our online testing web app, you can conduct tests anytime, anywhere, and on any device with an internet connection.<br>
+   <br>Say goodbye to paper-based tests and hello to our user-friendly online testing platform.<br>
+  <br>Our online testing web app empowers educators and businesses to conduct tests with ease and confidence.<br>
+   <br>Testing just got easier with our intuitive and customizable online testing web app.</p>
+{% endblock %}
